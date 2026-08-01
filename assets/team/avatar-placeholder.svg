@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Takım üyesi fotoğrafı yer tutucusu">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee8ff"/><stop offset="1" stop-color="#d9ccff"/></linearGradient></defs>
+  <rect width="320" height="320" rx="52" fill="url(#g)"/>
+  <circle cx="160" cy="122" r="58" fill="#fff" opacity=".9"/>
+  <path d="M66 286c8-64 44-101 94-101s86 37 94 101" fill="#fff" opacity=".9"/>
+</svg>

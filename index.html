@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stylist AI - yapay zekâ destekli dijital gardırop ve kişiselleştirilmiş kombin öneri sistemi.">
+  <meta name="theme-color" content="#6f58d9">
+  <title>Stylist AI | Yapay Zekâ Destekli Dijital Gardırop</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Stylist AI ana sayfa">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Stylist AI</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Menüyü aç</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Ana menü">
+        <a href="#proje">Proje</a>
+        <a href="#urun">Ürün</a>
+        <a href="#mimari">Mimari</a>
+        <a href="#raporlar">Raporlar</a>
+        <a href="#takim">Takım</a>
+        <a class="nav-cta" href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span><b id="courseText">BİL 495</b> Bitirme Projesi</div>
+          <h1>Gardırobundaki parçalarla <em>doğru kombini</em> keşfet.</h1>
+          <p id="projectSummary" class="hero-lead">Stylist AI, mevcut kıyafetleri analiz ederek bağlama uygun ve açıklanabilir kombin önerileri sunar.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#proje">Projeyi keşfet <span aria-hidden="true">→</span></a>
+            <a class="button ghost" href="#raporlar">Raporları indir</a>
+          </div>
+          <div class="hero-meta" aria-label="Proje bilgileri">
+            <span><strong>Platform</strong> Android</span>
+            <span><strong>Yaklaşım</strong> AI + GNN</span>
+            <span><strong>Dönem</strong> <span id="periodText">2025-2026 Yaz</span></span>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1" aria-label="Stylist AI mobil uygulama ana ekranı">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="phone-card">
+            <img src="assets/mockups/ana-sayfa.webp" alt="Stylist AI mobil uygulamasının ana ekran taslağı" width="330" height="595">
+          </div>
+          <div class="float-card float-weather"><span aria-hidden="true">☁</span><div><small>Bağlam</small><b>22°C · Hafif Bulutlu</b></div></div>
+          <div class="float-card float-score"><span aria-hidden="true">✦</span><div><small>Uyum skoru</small><b>%92</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Projenin temel değerleri">
+      <div class="container trust-grid">
+        <span>Mevcut gardırobu merkeze alır</span>
+        <span>Bağlamsal öneri üretir</span>
+        <span>Kararını açıklar</span>
+        <span>Gizliliği gözetir</span>
+      </div>
+    </section>
+
+    <section id="proje" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span>Proje açıklaması</div>
+          <h2>Daha fazla kıyafet değil, <em>daha akıllı kullanım.</em></h2>
+          <p>Stylist AI, kullanıcıların sahip oldukları parçaları daha verimli kullanmasına yardım eden bütünleşik bir karar destek sistemi olarak tasarlandı.</p>
+        </div>
+        <div class="problem-solution-grid">
+          <article class="story-card problem reveal">
+            <span class="card-number">01</span>
+            <div class="icon-box" aria-hidden="true">?</div>
+            <h3>Problem</h3>
+            <p>Günlük kombin oluşturmak zaman alıyor; kullanıcılar gardıroplarındaki parçaların potansiyelini göremiyor ve benzer ürünleri tekrar satın alabiliyor.</p>
+          </article>
+          <article class="story-card solution reveal delay-1">
+            <span class="card-number">02</span>
+            <div class="icon-box" aria-hidden="true">✦</div>
+            <h3>Çözüm</h3>
+            <p>Kıyafet görsellerini otomatik analiz eden, dijital gardırop oluşturan ve hava durumu, etkinlik, stil ile geri bildirimi birlikte değerlendiren kişiselleştirilmiş öneri sistemi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad soft-section">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <div class="eyebrow"><span></span>Nasıl çalışır?</div>
+          <h2>Dört adımda günlük stil desteği</h2>
+        </div>
+        <ol class="process-grid">
+          <li class="process-card reveal"><span>1</span><h3>Kıyafeti yükle</h3><p>JPG, JPEG veya PNG görselini ekle; sistem dosyayı doğrulasın.</p></li>
+          <li class="process-card reveal delay-1"><span>2</span><h3>AI analiz etsin</h3><p>Kategori, baskın renk, görsel özellik ve embedding bilgileri çıkarılsın.</p></li>
+          <li class="process-card reveal delay-2"><span>3</span><h3>Bağlamı seç</h3><p>Hava durumu, mevsim, etkinlik türü ve stil tercihleri değerlendirilsin.</p></li>
+          <li class="process-card reveal delay-3"><span>4</span><h3>Kombini keşfet</h3><p>Birden fazla öneri, uyum skoru ve anlaşılır gerekçelerle sunulsun.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="urun" class="section-pad product-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span>Ürün görünümü</div>
+          <h2>Fikirden <em>mobil deneyime</em></h2>
+        </div>
+        <div class="mockup-stage reveal">
+          <div class="mockup-copy">
+            <span class="mockup-kicker">Ekran akışı</span>
+            <h3 id="mockupTitle">Kıyafet analizi</h3>
+            <p id="mockupDescription">Yüklenen kıyafetin kategori, renk ve kumaş gibi nitelikleri kullanıcıya anlaşılır biçimde gösterilir.</p>
+            <div class="mockup-tabs" role="tablist" aria-label="Uygulama ekranları">
+              <button class="mockup-tab active" type="button" role="tab" aria-selected="true" data-image="kiyafet-analizi" data-title="Kıyafet analizi" data-description="Yüklenen kıyafetin kategori, renk ve kumaş gibi nitelikleri kullanıcıya anlaşılır biçimde gösterilir.">Analiz</button>
+              <button class="mockup-tab" type="button" role="tab" aria-selected="false" data-image="dijital-gardirop" data-title="Dijital gardırop" data-description="Kullanıcı kıyafetlerini kategori, renk ve kullanım durumuna göre görüntüler, filtreler ve yönetir.">Gardırop</button>
+              <button class="mockup-tab" type="button" role="tab" aria-selected="false" data-image="kombin-onerileri" data-title="Bağlamsal öneriler" data-description="Etkinlik ve hava durumu bilgisine göre birden fazla kombin adayı uyum skoruyla listelenir.">Öneriler</button>
+              <button class="mockup-tab" type="button" role="tab" aria-selected="false" data-image="kombin-detayi" data-title="Açıklanabilir sonuç" data-description="Önerinin renk, hava durumu, etkinlik ve uyum skoru açısından neden seçildiği açıklanır.">Açıklama</button>
+              <button class="mockup-tab" type="button" role="tab" aria-selected="false" data-image="gardirop-analizi" data-title="Gardırop analizi" data-description="Az kullanılan parçalar, eksik kategoriler ve gardırop özeti tek ekranda sunulur.">Analiz özeti</button>
+            </div>
+          </div>
+          <div class="mockup-device" aria-live="polite">
+            <img id="mockupImage" src="assets/mockups/kiyafet-analizi.webp" alt="Stylist AI kıyafet analizi ekran taslağı" width="335" height="590">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <div class="eyebrow"><span></span>Temel yetenekler</div>
+          <h2>Tek platform, bütünleşik deneyim</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><div class="feature-icon">01</div><h3>Otomatik kıyafet analizi</h3><p>Kıyafet tespiti, kategori sınıflandırması, baskın renk ve görsel embedding çıkarımı.</p></article>
+          <article class="feature-card reveal delay-1"><div class="feature-icon">02</div><h3>Dijital gardırop</h3><p>Kıyafetleri görüntüleme, filtreleme, düzenleme, silme ve kullanım geçmişini izleme.</p></article>
+          <article class="feature-card reveal delay-2"><div class="feature-icon">03</div><h3>Bağlamsal öneri</h3><p>Hava durumu, mevsim, etkinlik türü, renk, stil ve kullanıcı tercihlerinin birlikte değerlendirilmesi.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">04</div><h3>Açıklanabilir AI</h3><p>Her önerinin neden sunulduğunu gerçek karar bileşenlerine dayalı olarak açıklama.</p></article>
+          <article class="feature-card reveal delay-1"><div class="feature-icon">05</div><h3>Geri bildirim</h3><p>Önerileri beğenme, reddetme veya kaydetme; kişiselleştirmeyi doğrudan tercihlerle geliştirme.</p></article>
+          <article class="feature-card reveal delay-2"><div class="feature-icon">06</div><h3>Gardırop içgörüsü</h3><p>Az kullanılan kıyafetleri, eksik kategorileri ve kullanım dağılımını görünür kılma.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mimari" class="section-pad dark-section">
+      <div class="container architecture-grid">
+        <div class="architecture-copy reveal">
+          <div class="eyebrow light"><span></span>Teknik yaklaşım</div>
+          <h2>Modüler, güvenli ve <em>geliştirilebilir</em></h2>
+          <p>Android istemci; REST tabanlı çekirdek backend, ayrılabilir yapay zekâ yürütme alt sistemi ve kalıcı veri katmanıyla birlikte çalışır. Modüler monolit yaklaşımı uygulanır.</p>
+          <ul class="check-list">
+            <li>Android mobil istemci</li>
+            <li>Modüler monolit backend</li>
+            <li>Görüntü analizi ve GNN model servisi</li>
+            <li>PostgreSQL, object storage ve vektör arama</li>
+            <li>Hava durumu / bağlam entegrasyonu</li>
+            <li>JWT, HTTPS ve kaynak sahipliği kontrolü</li>
+          </ul>
+        </div>
+        <div class="architecture-diagram reveal delay-1" aria-label="Stylist AI yüksek seviye mimari diyagramı">
+          <div class="arch-node mobile"><small>İstemci</small><strong>Android Uygulama</strong><span>UI · Kamera · Bildirim</span></div>
+          <div class="arch-arrow down" aria-hidden="true">↓ REST / HTTPS</div>
+          <div class="arch-node backend"><small>Çekirdek</small><strong>Modüler Backend</strong><span>Kimlik · Gardırop · Öneri · Açıklama · Geri bildirim</span></div>
+          <div class="arch-split" aria-hidden="true"><span>↙</span><span>↘</span></div>
+          <div class="arch-row">
+            <div class="arch-node ai"><small>AI Alt Sistemi</small><strong>YOLO · Embedding · GNN</strong><span>Analiz ve çıkarım</span></div>
+            <div class="arch-node data"><small>Veri Katmanı</small><strong>PostgreSQL · Object Storage</strong><span>Vektör arama · Model artefaktları</span></div>
+          </div>
+          <div class="arch-node external"><small>Harici servis</small><strong>Hava Durumu API</strong><span>Kesintide genel öneri fallback'i</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad metrics-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <div class="eyebrow"><span></span>Ölçülebilir hedefler</div>
+          <h2>Başarıyı görünür kılan kriterler</h2>
+          <p>Raporlarda tanımlanan teknik ve kullanıcı odaklı hedefler.</p>
+        </div>
+        <div class="metrics-grid">
+          <article class="metric-card reveal"><strong>≥ %80</strong><span>Kıyafet tespit hedefi</span></article>
+          <article class="metric-card reveal delay-1"><strong>≥ %85</strong><span>Kategori sınıflandırma doğruluğu</span></article>
+          <article class="metric-card reveal delay-2"><strong>≥ %70</strong><span>Kullanıcıların uygun bulduğu öneriler</span></article>
+          <article class="metric-card reveal delay-3"><strong>&lt; 7 sn</strong><span>Uçtan uca kombin önerisi süresi</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="raporlar" class="section-pad reports-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span>Proje belgeleri</div>
+          <h2>Tüm raporlar tek yerde</h2>
+          <p>Her rapor PDF ve DOCX biçiminde doğrudan indirilebilir.</p>
+        </div>
+        <div class="report-list">
+          <article class="report-row reveal">
+            <div class="report-index">01</div><div><h3>Project Proposal</h3><p>Problem, motivasyon, çözüm yaklaşımı, kapsam, plan ve beklenen çıktılar.</p></div>
+            <div class="report-actions"><a href="assets/reports/stylist_ai_project_proposal.pdf" download>PDF</a><a href="assets/reports/stylist_ai_project_proposal.docx" download>DOCX</a></div>
+          </article>
+          <article class="report-row reveal">
+            <div class="report-index">02</div><div><h3>Project Specifications Report</h3><p>Kapsam, kısıtlar, etik sorumluluklar ve sistem gereksinimleri.</p></div>
+            <div class="report-actions"><a href="assets/reports/stylist_ai_project_specifications_report.pdf" download>PDF</a><a href="assets/reports/stylist_ai_project_specifications_eport.docx" download>DOCX</a></div>
+          </article>
+          <article class="report-row reveal">
+            <div class="report-index">03</div><div><h3>Analysis Report</h3><p>Gereksinimler, senaryolar, use case, sınıf modeli, dinamik modeller ve UI taslakları.</p></div>
+            <div class="report-actions"><a href="assets/reports/stylist_ai_analysis_report.pdf" download>PDF</a><a href="assets/reports/stylist_ai_analysis_report.docx" download>DOCX</a></div>
+          </article>
+          <article class="report-row reveal">
+            <div class="report-index">04</div><div><h3>PKE-Plan</h3><p>Kullanılan standartlar, proje kısıtları ve beklenen etkiler.</p></div>
+            <div class="report-actions"><a href="assets/reports/stylist_ai_pke_plan.pdf" download>PDF</a><a href="assets/reports/stylist_ai_pke_plan.docx" download>DOCX</a></div>
+          </article>
+          <article class="report-row reveal">
+            <div class="report-index">05</div><div><h3>High-Level Design Report</h3><p>Mimari stil, dağıtım, veri yönetimi, güvenlik ve alt sistem tasarımı.</p></div>
+            <div class="report-actions"><a href="assets/reports/stylist_ai_high_level_design_report.pdf" download>PDF</a><a href="assets/reports/stylist_ai_high_level_design_report.docx" download>DOCX</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="takim" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span>Proje ekibi</div>
+          <h2>Stylist AI'ı geliştiren takım</h2>
+        </div>
+        <div id="teamGrid" class="team-grid" aria-live="polite"></div>
+        <div class="advisor-card reveal">
+          <div><span class="mini-label">Akademik danışman</span><h3 id="advisorName">Bilgi güncellenecek</h3></div>
+          <p id="advisorNote">Takımın şu anda herhangi bir danışmanı bulunmamaktadır. Olduğu takdirde ileride güncellenecektir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section-pad contact-section">
+      <div class="container contact-card reveal">
+        <div>
+          <div class="eyebrow light"><span></span>İletişim ve kaynak kod</div>
+          <h2>Projeyi yakından inceleyin.</h2>
+          <p id="contactText">Takım e-posta adresi yayın öncesinde eklenecek. Raporlar şimdiden indirilebilir durumdadır.</p>
+        </div>
+        <div class="contact-actions">
+          <a id="emailButton" class="button light disabled" href="#" aria-disabled="true">E-posta eklenecek</a>
+          <a id="githubButton" class="button outline-light hidden" href="#" target="_blank" rel="noreferrer">GitHub deposu</a>
+          <a class="button outline-light" href="#raporlar">Raporlara git</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">✦</span><span>Stylist AI</span></a><p>Yapay zekâ destekli dijital gardırop ve kombin öneri sistemi.</p></div>
+      <div><strong>Proje</strong><a href="#proje">Açıklama</a><a href="#urun">Ürün</a><a href="#mimari">Mimari</a></div>
+      <div><strong>Kaynaklar</strong><a href="#raporlar">Raporlar</a><a href="#takim">Takım</a><a href="#iletisim">İletişim</a></div>
+      <div><strong>Akademik</strong><span id="institutionText">TOBB ETÜ</span><span id="departmentText">Bilgisayar Mühendisliği</span><span id="footerPeriod">2025-2026 Yaz Dönemi</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Stylist AI Proje Ekibi</span></div>
+  </footer>
+</body>
+</html>

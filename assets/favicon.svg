@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Stylist AI">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7259d6"/><stop offset="1" stop-color="#b38cff"/></linearGradient></defs>
+  <rect width="64" height="64" rx="18" fill="#f6f2ff"/>
+  <path d="M18 25c4 0 8-4 8-8 0 4 4 8 8 8-4 0-8 4-8 8 0-4-4-8-8-8Z" fill="url(#g)"/>
+  <path d="M29 40c6 0 11-5 11-11 0 6 5 11 11 11-6 0-11 5-11 11 0-6-5-11-11-11Z" fill="url(#g)" opacity=".9"/>
+</svg>
