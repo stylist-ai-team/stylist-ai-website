@@ -236,3 +236,353 @@ em { color: var(--purple); font-style: italic; font-weight: 500; }
   .footer-grid > div { grid-column: auto !important; }
   .footer-bottom { flex-direction: column; gap: 10px; }
 }
+
+/* =========================================================
+   MOBİL TAŞMA DÜZELTMESİ
+   Uzun kelimelerin ve grid elemanlarının ekranı genişletmesini
+   engeller.
+   ========================================================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+/* Grid ve flex elemanlarının içerik kadar genişleme davranışını engelle */
+main,
+section,
+.container,
+.hero-grid,
+.hero-copy,
+.hero-visual,
+.mockup-stage,
+.mockup-copy,
+.mockup-device,
+.architecture-grid,
+.architecture-copy,
+.architecture-diagram,
+.contact-card,
+.report-row,
+.team-card,
+.footer-grid {
+  min-width: 0;
+}
+
+.hero-grid > *,
+.mockup-stage > *,
+.architecture-grid > *,
+.contact-card > *,
+.report-row > *,
+.footer-grid > * {
+  min-width: 0;
+}
+
+/* Uzun Türkçe kelimelerin ekran dışına taşmasını engelle */
+.hero h1,
+.section-heading h2,
+.architecture-copy h2,
+.contact-card h2 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.hero-lead,
+.section-heading p,
+.story-card p,
+.process-card p,
+.feature-card p,
+.report-row p,
+.team-summary,
+.contact-card p,
+.footer-grid p {
+  overflow-wrap: anywhere;
+}
+
+/* Tablet görünümünde gridleri güvenli tek sütuna indir */
+@media (max-width: 1020px) {
+  .hero-grid,
+  .architecture-grid,
+  .mockup-stage,
+  .contact-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Telefon görünümü */
+@media (max-width: 760px) {
+  .container {
+    width: calc(100% - 28px);
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+
+  .nav-wrap {
+    min-height: 70px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 1.08rem;
+  }
+
+  .brand-mark {
+    flex: 0 0 auto;
+  }
+
+  .main-nav {
+    top: 70px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 54px;
+  }
+
+  .hero-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 6px;
+    font-size: 0.68rem;
+    line-height: 1.45;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
+  .eyebrow span {
+    width: 24px;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+
+    /* Eski 14vw değeri başlığı fazla büyütüyordu */
+    font-size: clamp(2.35rem, 11.5vw, 3.3rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+
+    overflow-wrap: break-word;
+  }
+
+  .hero-lead {
+    width: 100%;
+    max-width: 38rem;
+    margin-inline: auto;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    width: 100%;
+    margin: 28px 0;
+  }
+
+  .button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-meta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-meta > span {
+    min-width: 0;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 470px;
+    margin-inline: 0;
+    transform: none;
+  }
+
+  .phone-card {
+    width: min(300px, 78vw);
+    max-width: 100%;
+    padding: 14px;
+    border-radius: 44px;
+  }
+
+  .phone-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .orbit-one {
+    width: min(430px, 112vw);
+    height: min(430px, 112vw);
+  }
+
+  .orbit-two {
+    width: min(330px, 86vw);
+    height: min(330px, 86vw);
+  }
+
+  .float-card {
+    max-width: min(210px, 56vw);
+    padding: 10px 12px;
+    gap: 9px;
+  }
+
+  .float-card > span {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+  }
+
+  .float-card b {
+    font-size: 0.76rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .float-weather {
+    left: 0;
+    top: 120px;
+  }
+
+  .float-score {
+    right: 0;
+    bottom: 92px;
+  }
+
+  .section-heading h2,
+  .architecture-copy h2,
+  .contact-card h2 {
+    font-size: clamp(2.15rem, 10vw, 3.25rem);
+    line-height: 1.04;
+  }
+
+  .mockup-device {
+    width: min(335px, 100%);
+  }
+
+  .mockup-device img {
+    width: 100%;
+    height: auto;
+  }
+
+  .report-actions {
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
+  .report-actions a {
+    flex: 1 1 72px;
+  }
+
+  .team-card-actions {
+    flex-wrap: wrap;
+  }
+
+  .contact-actions,
+  .contact-actions .button {
+    width: 100%;
+  }
+}
+
+/* Küçük telefonlar */
+@media (max-width: 470px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-meta > span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .report-row {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .report-actions {
+    grid-column: 1 / -1;
+    padding-left: 46px;
+  }
+}
+
+/* 390 px ve daha dar ekranlar */
+@media (max-width: 390px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .section-pad {
+    padding: 68px 0;
+  }
+
+  .brand {
+    font-size: 1.02rem;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero {
+    padding-top: 44px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 10.5vw, 2.58rem);
+  }
+
+  .hero-lead {
+    font-size: 0.98rem;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+  }
+
+  .phone-card {
+    width: min(278px, 76vw);
+  }
+
+  .float-card {
+    max-width: 52vw;
+  }
+
+  .contact-card {
+    padding: 36px 20px;
+  }
+
+  .report-actions {
+    padding-left: 0;
+  }
+}
