@@ -15,7 +15,7 @@ window.STYLIST_AI_SITE = {
     {
       name: "Yusuf Kılıç",
       initials: "YK",
-      bio: "TOBB ETÜ Bilgisayar Mühendisliği son sınıf öğrencisiyim. Gömülü yazılım ve yapay zekâ alanlarına ilgi duyuyorum. Güncel teknolojilri takip etmekten keyif alıyorum.",
+      bio: "TOBB ETÜ Bilgisayar Mühendisliği son sınıf öğrencisiyim. Gömülü yazılım ve yapay zekâ alanlarına ilgi duyuyorum. Güncel teknolojileri takip etmekten keyif alıyorum.",
       photo: "assets/team/yusuf-kilic.png",
       linkedin: "https://www.linkedin.com/in/kilic-yusuf"
     },
